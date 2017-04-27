@@ -159,33 +159,3 @@ body > * {
   background-position: center ;
 }
 
-.mbr-overlay {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 1; }
-
-  .mbr-overlay ~ * {
-    z-index: 2; }
-
-.dimmed {
-  position: inherit;
-}
-
-#backgroundoverlay {
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.dimmed:before {
-  content: "";
-  z-index: 1;
-  display: inline;
-  position: absolute;
-  height: 100%;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5);
-}
