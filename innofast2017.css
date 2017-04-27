@@ -6023,6 +6023,9 @@ body > * {
 .dimmed {
   position: inherit; }
 
+#backgroundoverlay {
+  background: rgba(0, 0, 0, 0.5); }
+
 .dimmed:before {
   content: "";
   z-index: 1;
