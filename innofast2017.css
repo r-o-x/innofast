@@ -6008,3 +6008,7 @@ body > * {
   background-size: cover;
   background-repeat: none;
   background-position: center; }
+
+.bwr {
+  border: 3px solid #fff;
+  border-radius: 10px; }
