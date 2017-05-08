@@ -50,12 +50,12 @@
             </div>
           </div>
           <div class="col-md-6 my-5 px-5">
-            <form class="bg-primary py-4 bwr" name="formkopf">
+            <form class="bg-primary py-4 bwr" name="formkopf" method="post" action="&lt;?php echo htmlspecialchars($_SERVER[">
               <h4 class="text-center bg-primary text-white py-1 px-3">Fordern Sie eine kostenlose Live-Demo an</h4>
-              <div class="form-group px-4"> <label for="name1" class="text-white text-left" id="name1" required="">Name</label> <input class="form-control" placeholder="Name" id="name1" type="text"> </div>
-              <div class="form-group px-4"> <label class="text-white text-left" required="">E-Mail </label> <input type="email" class="form-control" placeholder="E-Mail"> </div>
-              <div class="form-group px-4"> <label class="text-white text-left" required="">Telefon</label> <input type="text" class="form-control" placeholder="Telefon"> </div>
-              <div class="form-group text-center"> <button type="submit" class="btn btn-warning" onclick="myFunction()">Kostenlose Live-Demo anfordern</button>
+              <div class="form-group px-4"> <label class="text-white text-left">Name</label> <input class="form-control" placeholder="Name" type="text" required="" id="name1" name="name1"> </div>
+              <div class="form-group px-4"> <label class="text-white text-left">E-Mail </label> <input type="email" class="form-control" placeholder="E-Mail" required="" name="email1"> </div>
+              <div class="form-group px-4"> <label class="text-white text-left">Telefon</label> <input type="text" class="form-control" placeholder="Telefon" name="tel1" required=""> </div>
+              <div class="form-group text-center"> <button type="submit" onclick="myFunction()" class="btn btn-warning">Kostenlose Live-Demo anfordern</button>
                 <script>
                   function validateForm() {
                       var x = document.forms["formkopf"]["name1"].value;
