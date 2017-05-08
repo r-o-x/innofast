@@ -55,7 +55,17 @@
               <div class="form-group px-4"> <label for="name1" class="text-white text-left">Name</label> <input class="form-control" placeholder="Name" id="name1" type="text"> </div>
               <div class="form-group px-4"> <label class="text-white text-left">E-Mail </label> <input type="email" class="form-control" placeholder="E-Mail"> </div>
               <div class="form-group px-4"> <label class="text-white text-left">Telefon</label> <input type="text" class="form-control" placeholder="Telefon"> </div>
-              <div class="form-group text-center"> <button type="submit" class="btn btn-warning">Kostenlose Live-Demo anfordern</button> </div>
+              <div class="form-group text-center"> <button type="submit" class="btn btn-warning" onclick="myFunction()">Kostenlose Live-Demo anfordern</button>
+                <script>
+                  function myFunction() {
+                      var txt = "";
+                      if (document.getElementById("id1").validity.rangeOverflow) {
+                         txt = "Value too large";
+                      }
+                      document.getElementById("demo").innerHTML = txt;
+                  }
+                </script>
+              </div>
             </form>
           </div>
         </div>
