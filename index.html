@@ -54,8 +54,8 @@
             </div>
           </div>
           <div class="col-md-6 my-5 px-5">
-            <form class="bg-primary py-4 bwr" name="formkopf" method="post" action="mailto:s.dohrn@innofast.de" enctype="text/plain">
-              <h4 class="text-center bg-primary text-white py-1 px-3">Fordern Sie eine kostenlose Live-Demo an</h4>
+            <form class="bg-primary bwr p-1" name="formkopf" method="post" action="mailto:s.dohrn@innofast.de" enctype="text/plain">
+              <h4 class="text-center bg-primary text-white py-4 px-3">Fordern Sie eine kostenlose Live-Demo an</h4>
               <div class="form-group px-4"> <label class="text-white text-left">Name</label>
                 <input class="form-control" placeholder="Name" type="text" required="" id="name1" name="name1"> </div>
               <div class="form-group px-4"> <label class="text-white text-left">E-Mail </label>
@@ -64,6 +64,10 @@
                 <input type="text" class="form-control" placeholder="Telefon" name="tel1" required=""> </div>
               <div class="form-group text-center">
                 <button type="submit" class="btn btn-warning">Kostenlose Live-Demo anfordern</button>
+              </div>
+              <div class="form-group text-center">
+                <p id="erfolg">
+                  <!--<?php echo $erfolg;?>-->Kostenlose Live-Demo anfordern</p>
               </div>
             </form>
           </div>
@@ -236,6 +240,29 @@
       </div>
     </div>
   </section>
+  <div class="modal fade" id="LiveDemoModal" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content bg-primary bwr">
+        <form class="bg-primary py-1 nbr">
+          <h4 class="bg-primary text-white py-4 px-3 text-center">Fordern Sie Ihre kostenlose Live-Demo an</h4>
+          <div class="form-group px-4"> <label for="name1" class="text-white text-left">Name</label>
+            <input class="form-control" placeholder="Name" id="name1" type="text"> </div>
+          <div class="form-group px-4"> <label class="text-white text-left">E-Mail </label>
+            <input type="email" class="form-control" placeholder="E-Mail"> </div>
+          <div class="form-group px-4"> <label class="text-white text-left">Telefon</label>
+            <input type="text" class="form-control" placeholder="Telefon"> </div>
+          <div class="form-group text-center">
+            <button type="submit" class="btn btn-warning">Kostenlose Live-Demo anfordern</button>
+          </div>
+          <div class="form-group text-center">
+            <p id="erfolg">
+              <!--<?php echo $erfolg;?>-->Kostenlose Live-Demo anfordern</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
   <div class="py-5">
     <div class="container">
       <div class="row">
@@ -390,28 +417,6 @@
       </div>
     </div>
   </div>
-  <div class="py-5 text-center">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <img src="https://pingendo.com/assets/photos/user_placeholder.png" class="center-block rounded-circle img-fluid my-3">
-          <h3>John Doe</h3>
-          <p>Developer</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <img src="https://pingendo.com/assets/photos/user_placeholder.png" class="center-block rounded-circle img-fluid my-3">
-          <h3>John Doe</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <p>Developer</p>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="py-5">
     <div class="container">
       <div class="row">
@@ -451,8 +456,8 @@
       <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content bg-primary bwr">
-          <form class="bg-primary py-4 nbr">
-            <h4 class="bg-primary text-white py-1 px-3 text-center">Fordern Sie Ihre kostenlose Live-Demo an</h4>
+          <form class="bg-primary py-1 nbr">
+            <h4 class="bg-primary text-white py-4 px-3 text-center">Fordern Sie Ihre kostenlose Live-Demo an</h4>
             <div class="form-group px-4"> <label for="name1" class="text-white text-left">Name</label>
               <input class="form-control" placeholder="Name" id="name1" type="text"> </div>
             <div class="form-group px-4"> <label class="text-white text-left">E-Mail </label>
@@ -461,6 +466,10 @@
               <input type="text" class="form-control" placeholder="Telefon"> </div>
             <div class="form-group text-center">
               <button type="submit" class="btn btn-warning">Kostenlose Live-Demo anfordern</button>
+            </div>
+            <div class="form-group text-center">
+              <p id="erfolg">
+                <!--<?php echo $erfolg;?>-->Kostenlose Live-Demo anfordern</p>
             </div>
           </form>
         </div>
